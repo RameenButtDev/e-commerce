@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #1c1c1e;
+  background-color: #fafaf8;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: "Poppins", sans-serif;
+}
+
+.price-tag {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background: #0f766e;
+  color: white;
+  padding: 2px 10px 2px 14px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  clip-path: polygon(8px 0, 100% 0, 100% 100%, 8px 100%, 0 50%);
+}
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
