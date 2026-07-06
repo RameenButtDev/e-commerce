@@ -49,7 +49,7 @@ const importData = async () => {
         price: 4999,
         discountPrice: 3999,
         countInStock: 25,
-        images: ["https://picsum.photos/seed/earbuds1/600/600"],
+        images: [],
         isFeatured: true,
       },
       {
@@ -60,7 +60,7 @@ const importData = async () => {
         price: 8999,
         discountPrice: 0,
         countInStock: 15,
-        images: ["https://picsum.photos/seed/smartwatch1/600/600"],
+        images: [],
         isFeatured: true,
       },
       {
@@ -71,7 +71,7 @@ const importData = async () => {
         price: 1999,
         discountPrice: 1499,
         countInStock: 40,
-        images: ["https://picsum.photos/seed/shirt1/600/600"],
+        images: [],
         isFeatured: true,
       },
       {
@@ -82,7 +82,7 @@ const importData = async () => {
         price: 5499,
         discountPrice: 0,
         countInStock: 10,
-        images: ["https://picsum.photos/seed/dinnerset1/600/600"],
+        images: [],
         isFeatured: false,
       },
       {
@@ -93,7 +93,7 @@ const importData = async () => {
         price: 1299,
         discountPrice: 999,
         countInStock: 50,
-        images: ["https://picsum.photos/seed/lipstick1/600/600"],
+        images: [],
         isFeatured: true,
       },
     ];
