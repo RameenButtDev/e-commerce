@@ -3,7 +3,7 @@ import api from "../../api/axios.js";
 import Loader from "../../components/Loader.jsx";
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Legend } from "recharts";
 
-const COLORS = ["#0f766e", "#f0a202", "#3b82f6", "#a855f7", "#ef4444"];
+const COLORS = ["#223252", "#cf8a24", "#56719d", "#a855f7", "#ef4444"];
 
 export default function AdminAnalytics() {
   const [data, setData] = useState(null);
@@ -24,7 +24,7 @@ export default function AdminAnalytics() {
             <XAxis dataKey="_id" fontSize={12} />
             <YAxis fontSize={12} />
             <Tooltip />
-            <Line type="monotone" dataKey="revenue" stroke="#0f766e" strokeWidth={2} />
+            <Line type="monotone" dataKey="revenue" stroke="#223252" strokeWidth={2} />
           </LineChart>
         </ResponsiveContainer>
       </div>
@@ -53,7 +53,7 @@ export default function AdminAnalytics() {
               <XAxis type="number" fontSize={12} />
               <YAxis type="category" dataKey="name" width={120} fontSize={11} />
               <Tooltip />
-              <Bar dataKey="totalSold" fill="#f0a202" radius={[0, 6, 6, 0]} />
+              <Bar dataKey="totalSold" fill="#cf8a24" radius={[0, 6, 6, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </div>

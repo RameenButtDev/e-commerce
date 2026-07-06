@@ -35,22 +35,33 @@ export default function Home() {
 
   return (
     <div>
-      <section className="bg-gradient-to-r from-primary-800 to-primary-600 text-white">
-        <div className="max-w-7xl mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center gap-8">
+      <section className="relative overflow-hidden bg-gradient-to-br from-primary-900 via-primary-800 to-primary-600 text-white">
+        <div className="absolute inset-0 hero-pattern pointer-events-none" />
+        <div className="relative max-w-7xl mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center gap-8">
           <div className="flex-1">
+            <span className="inline-block text-xs font-semibold tracking-wide uppercase text-accent-400 bg-white/10 px-3 py-1 rounded-full mb-4">
+              Trusted by shoppers nationwide
+            </span>
             <h1 className="font-display font-800 text-3xl md:text-5xl leading-tight mb-4">
               Shop Smart. <br /> Pay with <span className="text-accent-400">JazzCash</span> or <span className="text-accent-400">EasyPaisa</span>.
             </h1>
             <p className="text-primary-100 mb-6 max-w-md">
               Thousands of products, unbeatable prices, delivered to your doorstep across Pakistan.
             </p>
-            <Link to="/shop" className="inline-block bg-accent-500 hover:bg-accent-600 text-white font-semibold px-6 py-3 rounded-full transition">
-              Start Shopping
-            </Link>
+            <div className="flex items-center gap-4">
+              <Link to="/shop" className="inline-block bg-accent-500 hover:bg-accent-600 text-white font-semibold px-6 py-3 rounded-full transition shadow-cardHover">
+                Start Shopping
+              </Link>
+              <span className="text-sm text-primary-200">Free shipping over Rs. 5,000</span>
+            </div>
           </div>
           <div className="flex-1 hidden md:block">
-            <div className="w-full h-72 bg-white/10 rounded-2xl backdrop-blur flex items-center justify-center text-primary-100 text-sm">
-              Featured Banner Area
+            <div className="w-full h-72 bg-white/5 border border-white/10 rounded-2xl backdrop-blur flex flex-col items-center justify-center gap-3 text-primary-100">
+              <div className="w-16 h-16 rounded-full bg-accent-500/20 flex items-center justify-center">
+                <ShieldCheck className="text-accent-400" size={28} />
+              </div>
+              <p className="text-sm font-medium">100% Secure Checkout</p>
+              <p className="text-xs text-primary-200 max-w-[200px] text-center">Verified sellers, buyer protection on every order</p>
             </div>
           </div>
         </div>

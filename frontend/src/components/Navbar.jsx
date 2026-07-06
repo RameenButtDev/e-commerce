@@ -22,12 +22,6 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-card">
-      <div className="hidden md:block bg-ink text-gray-300 text-xs">
-        <div className="max-w-7xl mx-auto px-4 h-8 flex items-center justify-between">
-          <span>Free delivery on orders over Rs. 5,000</span>
-          <span>Pay easily with JazzCash · EasyPaisa · COD</span>
-        </div>
-      </div>
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16 gap-4">
           <Link to="/" className="font-display font-800 text-2xl text-primary-700 flex-shrink-0">

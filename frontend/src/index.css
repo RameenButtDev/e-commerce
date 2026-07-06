@@ -4,8 +4,8 @@
 
 body {
   font-family: "Inter", sans-serif;
-  color: #1c1c1e;
-  background-color: #fafaf8;
+  color: #1a1d24;
+  background-color: #f8f7f4;
 }
 
 h1, h2, h3, h4, .font-display {
@@ -16,12 +16,17 @@ h1, h2, h3, h4, .font-display {
   position: relative;
   display: inline-flex;
   align-items: center;
-  background: #0f766e;
+  background: #1a2740;
   color: white;
   padding: 2px 10px 2px 14px;
   font-weight: 600;
   font-size: 0.875rem;
   clip-path: polygon(8px 0, 100% 0, 100% 100%, 8px 100%, 0 50%);
+}
+
+.hero-pattern {
+  background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.12) 1px, transparent 0);
+  background-size: 22px 22px;
 }
 
 .scrollbar-hide::-webkit-scrollbar { display: none; }
